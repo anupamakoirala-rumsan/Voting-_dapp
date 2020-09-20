@@ -38,7 +38,15 @@ contract Voting {
     voters[voter].right ;//right given to the voter 
        
 }
-    
+    function vote(uint candidate) public {
+        Voter storage sender = voters[msg.sender];
+
+        require(sender.right );
+        require(sender.voted ,'Already voted!!');
+        sender.vote = 
+
+
+    }
 
       
       
