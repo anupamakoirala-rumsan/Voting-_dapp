@@ -44,7 +44,7 @@ contract Voting {
         require(sender.voted ,'Already voted!!');
         sender.voted = true;
         sender.vote = candidate;
-        candidates[candidate].votecount +=1;
+        candidates[candidate].votecount +=1; 
     }
     function winnercandidate() public view returns(bytes32 name) {
         uint winningvote =0;
